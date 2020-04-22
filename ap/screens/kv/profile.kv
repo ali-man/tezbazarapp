@@ -1,0 +1,19 @@
+<ProfileScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 100
+        spacing: 20
+        # canvas:
+        #     Color:
+        #         rgba: 1, 1, 1, 1
+        #     Rectangle:
+        #         size: self.size
+        #         pos: self.pos
+        TextInput:
+            hint_text: 'Город'
+        TextInput:
+            hint_text: 'Тел. номер'
+        Widget
+        Button:
+            text: 'Далее'
+            on_press: root.switch_screen('main')
